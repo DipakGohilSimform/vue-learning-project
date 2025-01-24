@@ -1,0 +1,14 @@
+.ant-form {
+  .ant-form-item-label {
+    label {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      color: var(--clr-gray-600);
+    }
+  }
+  .ant-input-affix-wrapper {
+    height: 50px;
+    border-radius: 10px;
+  }
+}

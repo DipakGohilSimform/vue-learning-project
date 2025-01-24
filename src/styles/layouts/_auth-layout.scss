@@ -1,0 +1,74 @@
+.auth-layout {
+  display: flex;
+  min-height: 100vh;
+  .form {
+    flex: 0 1 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--clr-white);
+    .logo {
+      margin-bottom: 40px;
+    }
+    .form-title {
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 34px;
+      color: var(--clr-gray-600);
+      margin-bottom: 60px;
+    }
+    .social-btn-wrapper {
+      width: 100%;
+      display: flex;
+      gap: 22px;
+      justify-content: center;
+      align-items: center;
+    }
+    .social-btn {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21;
+      color: var(--clr-gray-600);
+      background-color: var(--clr-gray-500);
+      box-shadow: none;
+    }
+    .ant-divider {
+      margin: 24px 0;
+    }
+    .ant-form {
+      width: 100%;
+    }
+    .reset-pass-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      .forget-pass {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: var(--clr-primary);
+      }
+    }
+    @media (max-width: 992px) {
+      flex: 1 1 auto;
+    }
+  }
+  .mockup {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+}

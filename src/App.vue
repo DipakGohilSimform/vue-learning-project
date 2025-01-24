@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <ConfigProvider :theme="themeTokens">
+      <router-view />
+    </ConfigProvider>
   </div>
 </template>
 
 <script>
+import { themeTokens } from "./styles/antd-config/antvConfig";
+
 export default {
   name: "App",
+  data() {
+    return {
+      themeTokens,
+    };
+  },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-</style>

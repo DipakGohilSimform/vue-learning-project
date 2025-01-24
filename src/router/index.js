@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import AdminLayout from "../layouts/AdminLayout.vue";
-import AuthLayout from "../layouts/AuthLayout.vue";
+import AdminLayout from "../layouts/AdminLayout/AdminLayout.vue";
+import AuthLayout from "../layouts/auth-layout/AuthLayout.vue";
 
 const routes = [
   {
@@ -16,14 +16,8 @@ const routes = [
   },
   {
     path: "/",
-    component: AuthLayout,
-    children: [
-      {
-        path: "login",
-        name: "Login",
-        component: () => import("../pages/auth/Login.vue"),
-      },
-    ],
+    name: "Login",
+    component: () => import("../pages/auth/Login.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
