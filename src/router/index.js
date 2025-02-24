@@ -34,6 +34,21 @@ const routes = [
     component: () => import("../pages/Documentation.vue"),
   },
   {
+    path: "/counter-demo",
+    name: "Counter Demo",
+    component: () => import("../pages/demo-task/Counter.vue"),
+  },
+  {
+    path: "/toggle-demo",
+    name: "Toggle Demo",
+    component: () => import("../pages/demo-task/Toggle.vue"),
+  },
+  {
+    path: "/input-mirror-demo",
+    name: "Input Mirror Demo",
+    component: () => import("../pages/demo-task/InputMirror.vue"),
+  },
+  {
     path: "/sign-up",
     name: "SignUp",
     component: () => import("../pages/auth/SignUp.vue"),

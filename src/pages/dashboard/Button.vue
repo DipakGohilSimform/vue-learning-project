@@ -14,12 +14,19 @@ defineProps({
 
 <style scoped>
 .btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #42b883;
   padding: 8px 16px;
-  background-color: gray;
-  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  outline: none;
   cursor: pointer;
+  transition: background 0.3s ease;
+  &:hover {
+    background: #168453;
+  }
 }
 
 .btn:disabled {
