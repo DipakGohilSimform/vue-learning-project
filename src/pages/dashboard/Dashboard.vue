@@ -1,31 +1,3 @@
-<template>
-  <div>
-    <a-button type="primary" @click="showModal">Open Modal</a-button>
-    <a-modal v-model:open="open" title="Basic Modal" @ok="handleOk">
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-    </a-modal>
-  </div>
-</template>
+<template>Dashboard</template>
 
-<script lang="ts" setup>
-import { ref } from "vue";
-
-// Import the Ant Design Vue components
-import { Button, Modal } from "ant-design-vue";
-
-// Import the styles for Ant Design Vue
-
-// State and methods
-const open = ref<boolean>(false);
-
-const showModal = () => {
-  open.value = true;
-};
-
-const handleOk = (e: MouseEvent) => {
-  console.log(e);
-  open.value = false;
-};
-</script>
+<script lang="ts" setup></script>

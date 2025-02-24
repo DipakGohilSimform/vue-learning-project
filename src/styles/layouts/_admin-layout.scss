@@ -1,0 +1,19 @@
+.ant-layout {
+  height: 100vh;
+  .ant-layout-sider {
+    background-color: var(--clr-white);
+
+    .logo {
+      margin: 40px;
+    }
+    .ant-menu {
+      background-color: var(--clr-white);
+    }
+    .ant-menu-title-content {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21;
+      color: rgba(var(--clr-gray-600), 0.5);
+    }
+  }
+}

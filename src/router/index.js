@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout.vue";
-import AuthLayout from "../layouts/auth-layout/AuthLayout.vue";
 
 const routes = [
   {
@@ -12,12 +11,32 @@ const routes = [
         name: "Dashboard",
         component: () => import("../pages/dashboard/Dashboard.vue"),
       },
+      {
+        path: "/components",
+        name: "Components",
+        component: () => import("../pages/dashboard/Components.vue"),
+      },
+      {
+        path: "/to-do",
+        name: "ToDo App",
+        component: () => import("../pages/dashboard/ToDo.vue"),
+      },
     ],
   },
+  // {
+  //   path: "/",
+  //   name: "Login",
+  //   component: () => import("../pages/auth/Login.vue"),
+  // },
   {
     path: "/",
-    name: "Login",
-    component: () => import("../pages/auth/Login.vue"),
+    name: "Documentation",
+    component: () => import("../pages/Documentation.vue"),
+  },
+  {
+    path: "/sign-up",
+    name: "SignUp",
+    component: () => import("../pages/auth/SignUp.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

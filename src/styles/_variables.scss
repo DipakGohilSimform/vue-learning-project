@@ -1,16 +1,16 @@
 :root {
-  --clr-primary: #605bff;
-  --clr-background: #fafafb;
-  --clr-white: #ffffff;
-  --clr-black: #000000;
-  --clr-red: #d11a2a;
-  --clr-orange: #ff8f6b;
-  --clr-cyan: #26c0e2;
-  --clr-green: #3a974c;
-  --clr-yellow: #ffd66b;
-  --clr-pink: #ff6a77;
+  --clr-primary: rgb(96, 91, 255);
+  --clr-background: rgb(250, 250, 251);
+  --clr-white: rgb(255, 255, 255);
+  --clr-black: rgb(0, 0, 0);
+  --clr-red: rgb(209, 26, 42);
+  --clr-orange: rgb(255, 143, 107);
+  --clr-cyan: rgb(38, 192, 226);
+  --clr-green: rgb(58, 151, 76);
+  --clr-yellow: rgb(255, 214, 107);
+  --clr-pink: rgb(255, 106, 119);
 
-  //   gray-shades
-  --clr-gray-500: #f7f7f8;
-  --clr-gray-600: #030229;
+  /* Gray Shades */
+  --clr-gray-500: rgb(247, 247, 248);
+  --clr-gray-600: rgb(3, 2, 41);
 }

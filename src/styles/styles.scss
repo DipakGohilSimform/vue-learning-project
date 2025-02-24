@@ -8,8 +8,4 @@
 body {
   font-family: "Nunito", serif;
   background-color: var(--clr-background);
-  ::selection {
-    background: var(--gray-300);
-    color: var(--black);
-  }
 }

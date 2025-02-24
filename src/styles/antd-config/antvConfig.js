@@ -1,3 +1,6 @@
+import { Checkbox } from "ant-design-vue";
+import { siderProps } from "ant-design-vue/es/layout/Sider";
+
 export const themeTokens = {
   token: {
     fontFamily: "Nunito, serif",
@@ -12,6 +15,9 @@ export const themeTokens = {
     },
     Input: {
       borderRadius: "10px",
+    },
+    siderProps: {
+      siderBg: "var(--clr-white)",
     },
   },
 };
